@@ -1,0 +1,268 @@
+/*
+Theme Name: ODSLU Custom
+Author: Tlavon Designs
+Version: 1.0
+*/
+
+body {
+    margin: 0;
+}
+
+#content {
+    min-height: calc(100vh - 20px);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-container {
+    display: none;
+}
+
+.logo {
+    height: 6em;
+    /* margin: 0 3em; */
+    padding: 0 3em;
+}
+
+.navi-list {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 6em;
+}
+
+.navi-list img {
+    vertical-align: middle;
+}
+
+.navi-list li {
+    margin: 2.5em;
+    font-family: 'Playfair Display', serif;
+}
+
+.navi-list a {
+    text-decoration: none;
+    color: black;
+}
+
+.navi-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-div {
+    background-color: #c39b73;
+    padding-top: 3.3vmax;
+    padding-bottom: 3.3vmax;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-div p {
+    font-size: 1em;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.footer-div a {
+    text-decoration: underline;
+    color: black;
+}
+
+.link-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.link-div ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+.connect-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.connect-div p {
+    font-size: 1em;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.connect-div i {
+    margin: 1em;
+    font-size: 1.5em;
+}
+
+.connect-div a {
+    text-decoration: none;
+    color: black;
+}
+
+.connect-div a:hover {
+    color: #9c1525;
+}
+
+.blog-title-font {
+    font-family: 'Playfair Display', serif;
+}
+
+.blog-title {
+    text-align: center;
+    color: #9c1525;
+    font-size: 5em;
+}
+
+.non-sans {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.blog-container {
+    margin: 5em 3em;
+    text-align: center;
+}
+.blog-container a {
+    text-decoration: underline;
+    color: black;
+}
+
+.content-style p {
+    margin: 1em;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.faq-question {
+    color: #9c1525;
+    font-size: 2em;
+    margin-left: 1em;
+}
+
+.wpforms-container.wpf-center {
+    margin: 0 auto !important;
+    max-width: 500px;
+}
+
+.menu-overlay {
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 110;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, .96);
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(1.09);
+    transition: opacity .3s, transform .3s, visibility .3s;
+    box-sizing: border-box;
+  }
+
+  .menu-overlay--active {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+  }
+  .center {
+    text-align: center;
+}
+
+
+@media only screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 812px) {
+    .container {
+        display: block;
+     }
+ 
+     .mobile-container {
+         display: flex;
+         justify-content: space-between;
+         padding-top: .5em;
+     }
+
+     .menu-icon {
+        font-size: 3em !important;
+        padding: 0 1em;
+        align-self: center;
+     }
+
+     .close-icon {
+        float: right;
+        margin: 3em;
+        font-size: 3em !important;
+     }
+
+     .navi-container {
+         display: none;
+     }
+
+     .navi-list {
+        list-style: none;
+        /* display: inline-flex; */
+        align-items: center;
+        margin-right: 6em;
+        display: flex;
+        flex-direction: column;
+        margin-top: 3em;
+        font-size: 3em;
+        margin-left: 4em;
+     }
+     
+     .footer-div {
+        flex-direction: column;
+     }
+
+     .link-div {
+         align-self: center;
+     }
+  }
+  
+  @media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px) {
+    .container {
+        display: block;
+     }
+ 
+     .mobile-container {
+         display: flex;
+         justify-content: space-between;
+         padding-top: .5em;
+     }
+
+     .menu-icon {
+        font-size: 2em !important;
+        padding: 0 1em;
+        align-self: center;
+     }
+
+     .close-icon {
+        float: right;
+        margin-top: 1.5em;
+        font-size: 2em !important;
+        margin-right: 1em;
+     }
+
+     .navi-container {
+         display: none;
+     }
+
+     .navi-list {
+        list-style: none;
+        /* display: inline-flex; */
+        align-items: center;
+        margin-right: 6em;
+        display: flex;
+        flex-direction: column;
+        margin-top: 3em;
+        font-size: 2em;
+        margin-left: 4em;
+     }
+
+  }
