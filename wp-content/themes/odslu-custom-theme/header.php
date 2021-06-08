@@ -30,10 +30,11 @@
             <div class="menu-overlay">
                 <i class="fa fa-times close-icon"></i>
                 <ul class="navi-list">
+                    <li><a href="<?php echo site_url() ?>">Home</a></li>
                     <li><a href="<?php echo site_url('/services') ?>">Services</a></li>
                     <li><a href="<?php echo site_url('/one-day-she-leveled-up') ?>">ODSLU</a></li>
                     <li><a href="<?php echo site_url('/blog') ?>">Blog</a></li>
-                    <li><a href="#">Shop</a></li>
+                    <li><a href="<?php echo site_url('/shop') ?>">Shop</a></li>
                     <li><a href="<?php echo site_url('/about') ?>">About</a></li>
                     <li><a href="<?php echo site_url('/contact-us') ?>">Contact</a></li>
                 </ul>
